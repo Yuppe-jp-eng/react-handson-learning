@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   react-app:
-    container_name: react-jsx-app
+    container_name: react-handson-learning
     build:
       context: .
     tty: true

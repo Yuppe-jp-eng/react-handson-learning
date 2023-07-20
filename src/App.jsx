@@ -1,9 +1,10 @@
-import './App.css'
-import StarRating from './StarRating.jsx'
+import { useState } from 'react';
+import './App.css';
+import colorData from './color-data.json';
+import ColorList from './ColorList'
+
 export default function App() {
-  return <StarRating
-          style={{ backGroudColor: "lightblue"}}
-          onDoubleClick={ e => alert("double click")}
-          />
+  const [colors] = useState(colorData);
+  return <ColorList colors={colors} />
 }
 
